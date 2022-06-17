@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+header .headd {
+  width: 100%;
+  background-color: rgb(9, 46, 76);
+  padding: 40px;
+}
+header .headd div a {
+  text-decoration: none;
+  font-size: x-large;
+  color: beige;
+}
+header .headd div .flex {
+  margin-top: 40px;
+  padding-left: 50px;
+}
+header .headd .grid {
+  margin-top: -26px;
+  float: right;
+  margin-right: 200px;
+}
+main {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.sedans,
+.suvs,
+.luxury {
+  font-family: "Lexend Deca", sans-serif;
+  width: 100%;
+  padding: 5px 30px;
+  font-size: 15px;
+  height: 65vh;
+  border-radius: 5px;
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+.sedans h2,
+.suvs h2,
+.luxury h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2em;
+  margin: 25px auto;
+}
+.sedans p,
+.suvs p,
+.luxury p {
+  margin: auto;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.9em;
+  letter-spacing: 0.3px;
+  line-height: 23px;
+  margin-bottom: 65px;
+}
+.sedans button,
+.suvs button,
+.luxury button {
+  background-color: hsl(0, 0%, 95%);
+  margin: auto;
+  text-align: center;
+  padding: 10px 30px;
+  border: 2px solid hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  border-radius: 30px;
+}
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+button:active {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: column;
+    height: 200vh;
+    width: 100%;
+    margin: 10px 5px;
+  }
+  header .headd .grid {
+    min-width: 100px;
+  }
+  .sedans,
+  .suvs,
+  .luxury {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sedans button,
+  .luxury button {
+    margin-top: 27px;
+  }
+}
