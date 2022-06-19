@@ -59,7 +59,7 @@ main {
   background-color: rgb(1, 174, 253);
   grid-area: e;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .grid-container {
     width: 96%;
     gap: 5px;
