@@ -102,7 +102,7 @@ button:active {
   background-color: transparent;
   color: hsl(0, 0%, 95%);
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   main {
     flex-direction: column;
     height: 200vh;
